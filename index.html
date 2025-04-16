@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+    .slide.active {
+      display: block;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+    }
+    .prev { left: 0; }
+    .next { right: 0; }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header Section -->
+  <header class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">Welcome to My App Portfolio</h1>
+      <p class="mt-2 text-lg">Discover my collection of innovative Android apps</p>
+    </div>
+  </header>
+
+  <!-- Apps Section -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">My Apps</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+	
+      <!-- App 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.example.app1" target="_blank">
+          <img src="images/app1/logo.webp" alt="App 1 Logo" class="mx-auto mb-4 rounded w-24 h-24">
+        </a>
+        <h3 class="text-xl font-semibold">Figurinhas bom dia e boa noite</h3>
+        <p class="text-gray-600 mb-4">Figurinhas bom dia, boa tarde e boa noite para WhatsApp.</p>
+        <div class="slideshow-container">
+          <img class="slide" src="images/app1/3.webp" alt=" ">
+          <img class="slide" src="images/app1/4.webp" alt=" ">
+          <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.maryapps.stickers.whats" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">Get it on Google Play</a>
+      </div>
+	  
+	  
+	  
+      <!-- App 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.maryapps.stickers.whats" target="_blank">
+          <img src="images/app1/logo.webp" alt="App 2 Logo" class="mx-auto mb-4 rounded w-24 h-24">
+        </a>
+        <h3 class="text-xl font-semibold">App 2</h3>
+        <p class="text-gray-600 mb-4">A brief description of App 2 and its features.</p>
+        <div class="slideshow-container">
+          <img class="slide" src="apps/app2/screenshots/screenshot1.png" alt="App 2 Screenshot 1">
+          <img class="slide" src="apps/app2/screenshots/screenshot2.png" alt="App 2 Screenshot 2">
+          <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.example.app2" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">Get it on Google Play</a>
+      </div>
+	  
+	  
+	  
+      <!-- App 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.example.app3" target="_blank">
+          <img src="images/app_logo3.png" alt="App 3 Logo" class="mx-auto mb-4 rounded w-24 h-24">
+        </a>
+        <h3 class="text-xl font-semibold">App 3</h3>
+        <p class="text-gray-600 mb-4">A brief description of App 3 and its features.</p>
+        <div class="slideshow-container">
+          <img class="slide" src="apps/app3/screenshots/screenshot1.png" alt="App 3 Screenshot 1">
+          <img class="slide" src="apps/app3/screenshots/screenshot2.png" alt="App 3 Screenshot 2">
+          <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.example.app3" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">Get it on Google Play</a>
+      </div>
+	  
+	  
+	  
+      <!-- App 4 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.example.app4" target="_blank">
+          <img src="images/app_logo4.png" alt="App 4 Logo" class="mx-auto mb-4 rounded w-24 h-24">
+        </a>
+        <h3 class="text-xl font-semibold">App 4</h3>
+        <p class="text-gray-600 mb-4">A brief description of App 4 and its features.</p>
+        <div class="slideshow-container">
+          <img class="slide" src="apps/app4/screenshots/screenshot1.png" alt="App 4 Screenshot 1">
+          <img class="slide" src="apps/app4/screenshots/screenshot2.png" alt="App 4 Screenshot 2">
+          <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.example.app4" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">Get it on Google Play</a>
+      </div>
+	  
+	  
+	  
+      <!-- App 5 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.example.app5" target="_blank">
+          <img src="images/app_logo5.png" alt="App 5 Logo" class="mx-auto mb-4 rounded w-24 h-24">
+        </a>
+        <h3 class="text-xl font-semibold">App 5</h3>
+        <p class="text-gray-600 mb-4">A brief description of App 5 and its features.</p>
+        <div class="slideshow-container">
+          <img class="slide" src="apps/app5/screenshots/screenshot1.png" alt="App 5 Screenshot 1">
+          <img class="slide" src="apps/app5/screenshots/screenshot2.png" alt="App 5 Screenshot 2">
+          <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.example.app5" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">Get it on Google Play</a>
+      </div>
+	  
+	  
+	  
+      <!-- App 6 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <a href="https://play.google.com/store/apps/details?id=com.example.app6" target="_blank">
+          <img src="images/app_logo6.png" alt="App 6 Logo" class="mx-auto mb-4 rounded w-24 h-24">
+        </a>
+        <h3 class="text-xl font-semibold">App 6</h3>
+        <p class="text-gray-600 mb-4">A brief description of App 6 and its features.</p>
+        <div class="slideshow-container">
+          <img class="slide" src="apps/app6/screenshots/screenshot1.png" alt="App 6 Screenshot 1">
+          <img class="slide" src="apps/app6/screenshots/screenshot2.png" alt="App 6 Screenshot 2">
+          <a class="prev" onclick="changeSlide(this, -1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(this, 1)">&#10095;</a>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.example.app6" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">Get it on Google Play</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Your Name. All rights reserved.</p>
+      <p class="mt-2">Contact: <a href="mailto:your.email@example.com" class="underline">your.email@example.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    // Initialize slideshows
+    document.querySelectorAll('.slideshow-container').forEach(container => {
+      const slides = container.querySelectorAll('.slide');
+      slides[0].classList.add('active');
+    });
+
+    // Change slide function
+    function changeSlide(element, direction) {
+      const container = element.closest('.slideshow-container');
+      const slides = container.querySelectorAll('.slide');
+      let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + direction + slides.length) % slides.length;
+      slides[currentIndex].classList.add('active');
+    }
+  </script>
+
+  <!-- Deployment Instructions -->
+  <!--
+    To deploy this landing page on GitHub Pages:
+    1. Create a new repository on GitHub named `username.github.io` (replace `username` with your GitHub username) or use an existing repository.
+    2. Save this code as `index.html` in the root of your repository.
+    3. Create the following folder structure:
+       - `images/` for app logos (e.g., `app_logo1.png`, `app_logo2.png`, etc.).
+       - `apps/app1/screenshots/` for App 1 screenshots (e.g., `screenshot1.png`, `screenshot2.png`, etc.).
+       - Repeat for `app2`, `app3`, ..., `app6`.
+    4. Upload your app logos to `images/` and screenshots to the respective `apps/appN/screenshots/` folders.
+    5. Update the Play Store links in the `<a href>` tags with your actual app URLs.
+    6. Customize app names, descriptions, and other text as needed.
+    7. Commit and push your changes to the repository.
+    8. Enable GitHub Pages in your repository settings:
+       - Go to Settings > Pages.
+       - Set the source to the `main` branch (or `master` if applicable).
+       - Save, and your site will be live at `https://username.github.io` (or `https://username.github.io/repo-name` for project pages).
+    9. It may take a few minutes for the site to propagate. If it doesn't appear, ensure GitHub Pages is enabled and check for errors.
+    Note: Replace placeholder paths (e.g., `images/app_logo1.png`, `apps/app1/screenshots/screenshot1.png`) with your actual file names, and update Play Store links accordingly. Ensure images are optimized for web (e.g., PNG or JPG, ~100-200KB each). Each slideshow assumes at least two screenshots per app; add more `<img class="slide">` tags if needed.
+  -->
+</body>
+</html>
